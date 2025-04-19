@@ -1,0 +1,289 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/shelly.golan/HPSv2/hpsv2/src/training/main.py", line 17, in <module>
+    import torch.utils.tensorboard as tensorboard
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/writer.py", line 13, in <module>
+    from tensorboard.summary.writer.event_file_writer import EventFileWriter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 33, in <module>
+    import boto3
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/client.py", line 17, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/utils.py", line 37, in <module>
+    import botocore.httpsession
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 45, in <module>
+    from urllib3.contrib.pyopenssl import (
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.crypto
+  File "/usr/lib/python3/dist-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1553, in <module>
+    class X509StoreFlags(object):
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1573, in X509StoreFlags
+    CB_ISSUER_CHECK = _lib.X509_V_FLAG_CB_ISSUER_CHECK
+AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 950382) of binary: /usr/bin/python3.8
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/shelly.golan/HPSv2/hpsv2/src/training/main.py", line 17, in <module>
+    import torch.utils.tensorboard as tensorboard
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/writer.py", line 13, in <module>
+    from tensorboard.summary.writer.event_file_writer import EventFileWriter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 33, in <module>
+    import boto3
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/client.py", line 17, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/utils.py", line 37, in <module>
+    import botocore.httpsession
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 45, in <module>
+    from urllib3.contrib.pyopenssl import (
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.crypto
+  File "/usr/lib/python3/dist-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1553, in <module>
+    class X509StoreFlags(object):
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1573, in X509StoreFlags
+    CB_ISSUER_CHECK = _lib.X509_V_FLAG_CB_ISSUER_CHECK
+AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 950385) of binary: /usr/bin/python3.8
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/shelly.golan/HPSv2/hpsv2/src/training/main.py", line 17, in <module>
+    import torch.utils.tensorboard as tensorboard
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/writer.py", line 13, in <module>
+    from tensorboard.summary.writer.event_file_writer import EventFileWriter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 33, in <module>
+    import boto3
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/client.py", line 17, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/utils.py", line 37, in <module>
+    import botocore.httpsession
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 45, in <module>
+    from urllib3.contrib.pyopenssl import (
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.crypto
+  File "/usr/lib/python3/dist-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1553, in <module>
+    class X509StoreFlags(object):
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1573, in X509StoreFlags
+    CB_ISSUER_CHECK = _lib.X509_V_FLAG_CB_ISSUER_CHECK
+AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 950394) of binary: /usr/bin/python3.8
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/shelly.golan/HPSv2/hpsv2/src/training/main.py", line 17, in <module>
+    import torch.utils.tensorboard as tensorboard
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/utils/tensorboard/writer.py", line 13, in <module>
+    from tensorboard.summary.writer.event_file_writer import EventFileWriter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/__init__.py", line 22, in <module>
+    from tensorboard.summary import v1  # noqa: F401
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/summary/v1.py", line 23, in <module>
+    from tensorboard.plugins.histogram import summary as _histogram_summary
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary.py", line 35, in <module>
+    from tensorboard.plugins.histogram import summary_v2
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/plugins/histogram/summary_v2.py", line 35, in <module>
+    from tensorboard.util import tensor_util
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/util/tensor_util.py", line 20, in <module>
+    from tensorboard.compat.tensorflow_stub import dtypes, compat, tensor_shape
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/__init__.py", line 22, in <module>
+    from .dtypes import as_dtype  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py", line 19, in <module>
+    from . import pywrap_tensorflow
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/pywrap_tensorflow.py", line 22, in <module>
+    from .io import gfile
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/__init__.py", line 17, in <module>
+    from . import gfile  # noqa
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 33, in <module>
+    import boto3
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/client.py", line 17, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/utils.py", line 37, in <module>
+    import botocore.httpsession
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 45, in <module>
+    from urllib3.contrib.pyopenssl import (
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.crypto
+  File "/usr/lib/python3/dist-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1553, in <module>
+    class X509StoreFlags(object):
+  File "/usr/lib/python3/dist-packages/OpenSSL/crypto.py", line 1573, in X509StoreFlags
+    CB_ISSUER_CHECK = _lib.X509_V_FLAG_CB_ISSUER_CHECK
+AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 950397) of binary: /usr/bin/python3.8
+Traceback (most recent call last):
+  File "/home/shelly.golan/.local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/shelly.golan/.local/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src.training.main FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-05_17:04:38
+  host      : gipdeep6.csf.technion.ac.il
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 950397)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
